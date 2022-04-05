@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>과제2</title>
+        <style>
+            html,body{margin:0; padding:0; height:100%;}
+            header {width:100%; height:15%;
+            background:yellow;}
+            nav{width:15%; height:80%; float:left;
+            background:orange;}
+            section{width:70%; height:80%; float:left;
+            background:olivedrab;}
+            aside{width:15%; height:80%; float:left;
+            background:orange;}
+            footer{width:100%; height:10%; clear:both;
+            background:plum;}
+        </style>
+    </head>
+    
+
+    <body>
+        
+
+        <header><h1>웹프로그래밍 과제2</h1>
+            <h3>학번 : 18010779 이름 : 장호익</h4></header>
+        <nav><h3>목차</h3>
+            <ul>
+                <li> <a href = "#과제2-1">과제2-1</a></li>
+                <li> <a href = "#과제2-2">과제2-2</a></li>
+                <li> <a href = "#과제2-3">과제2-3</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h3><a id="과제2-1">과제2-1: 유튜브 동영상 재생</a></h3>
+            <iframe width="1100" height="150" src="https://www.youtube.com/embed/BdwfiToXEio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       
+
+            <h3><a id="과제2-2">과제2-2: 로그인 폼 만들기</a></h3>
+            <form>
+                <fieldset>
+                    <legend>Login</legend>
+                    <label> Username : <input type = "text" size="15" value=""></label>
+                    <label for="pass">Password : <input type = "password" size="15" value=""></label>
+               
+                </fieldset>
+            </form>
+            
+            <h3><a id="과제2-3">과제2-3: 다양한 형태 폼 만들기</a></h3>
+            <form>
+                <fieldset>
+                    <legend>도형 서식 입력</legend>
+
+                    선종류
+                    <select name="line">
+                        <option value="1" selected>선없음</option>
+                        <option value="2">실선</option>
+                        <option value="2">접선</option>
+                    </select>
+                    <br>
+                    <br>
+                    선두께
+                    <input type="number" value="" min="1" max="50">
+                    선색 <input type="color" value="#00bfff">
+                    <br>
+                    <br>
+                    투명도(0~100):<input type="range" min="0" max="100" list="transparency">
+                    <datalist id="transparency">
+                        <option value="0"label="Low"></option>
+                        <option value="50"label="Medium"></option>
+                        <option value="100"label="High"></option>
+                    </datalist>
+                </fieldset>
+                
+           
+            </form>
+        </section>
+        <aside><h3>과제2의 주내용</h3>
+            <ol type ="1">
+                <li>시맨틱 태그 이해</li>
+                <li> iframe 활용 youtube 동영상 재생</li>
+                <li> 웹폼 활용</li>
+            </ol>
+        </aside>
+        <footer>copyright</footer>
+
+    </body>
+</html>
