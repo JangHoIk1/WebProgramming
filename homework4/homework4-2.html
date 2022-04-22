@@ -1,0 +1,49 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>:hover 활용</title>
+        <style>
+            h2{
+                text-shadow:3px 3px red;
+            }
+            .card {
+                    width: 130px;
+                    height: 195px;
+                    position: relative;
+                    display: inline-block;
+                    margin-top:-100px;                
+                }
+            .card .img-top {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+         
+            }
+            .card:hover .img-top {
+                display: inline;
+            }
+
+        </style>
+    </head>
+    
+
+    <body>
+        <h2>:hover 활용</h2>
+        <hr>
+        <div>
+        마우스를 올리면 카드의 앞면이 보인다.
+        <div class="card" style="bottom:-100px;">
+            <img src="back.png" alt="Card Back" width=130px; height=195px;>
+            <img src="spade-7.png" class="img-top" alt="Card Front" width=130px; height=195px;>
+        </div>
+        </div>
+
+    
+
+
+    </body>
+
+
+</html>
